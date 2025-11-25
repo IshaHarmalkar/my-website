@@ -1,35 +1,46 @@
 <template>
   <q-page>
     <div class="main-container">
-      <div class="row">
-        <div class="col-6">
-          <div class="flex flex-center test-border q-mt-lg">
-            <h3 class="text-start q-ma-none q-pa-none">
-              Hi! I'm Isha — I build cool stuff for the web
-            </h3>
-            <h4 class="text-strart">
-              From hackathons to real-world apps, I love turning ideas into full-stack magic with
-              Laravel, Vue, and Node.js. Whether it’s crafting clean APIs, snappy UIs, or squeezing
-              out extra performance, I’m all about creating things that work and feel good to use.
-            </h4>
-          </div>
-          <div class="text-start">
-            Check out what <a>bboks I'm reading</a>, finnd me on <a>Twitter</a>, or on
-            <a>Linkedin</a>, or just <a>send me an email</a> saying hi.
+      <div class="row items-center">
+        <div class="col">
+          <div class="text-h3">Hi! I am Isha</div>
+          <div>
+            <p>
+              Software engineer from India.<br />
+              I like to build cool stuff, learn as build and lalllalaa
+            </p>
+            <!-- <div class="text-h6">Laravel | VueJs | Python</div> -->
+
+            <div class="text-h6">Always opent to banter.</div>
+            <div class="contact-container flex justify-between q-mt-sm">
+              <q-btn outline color="red" label="Resume" />
+              <q-btn outline color="red" label="Linkedin" />
+              <q-btn outline color="red" label="Twitter" />
+              <q-btn outline color="red" label="Mail" />
+            </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="flex">
-            <q-img :src="lineArtImage" fit="contain" />
-          </div>
+        <div class="col">
+          <q-img src="/home-media/line-art-transparent.png" />
         </div>
       </div>
     </div>
+
+    <!-- Work Experience -->
+    <work-experience class="space" />
+
+    <!-- Project Work -->
+    <project-work class="space" />
   </q-page>
 </template>
 
-<script setup>
-import lineArtImage from 'src/assets/home-media/line-art-transparent.png'
+<script>
+import ProjectWork from 'src/components/ProjectWork.vue'
+import WorkExperience from 'src/components/WorkExperience.vue'
+
+export default {
+  components: { WorkExperience, ProjectWork },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -38,5 +49,9 @@ import lineArtImage from 'src/assets/home-media/line-art-transparent.png'
 }
 .test-border {
   border: 1px solid pink;
+}
+
+.space {
+  margin: 160px 0;
 }
 </style>

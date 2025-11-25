@@ -5,9 +5,15 @@
       <q-toolbar class="q-py-sm">
         <q-toolbar-title class="text-h6 text-weight-light">
           <div class="flex items-center q-gutter-sm">
-            <span class="cursive">Isha Harmalkar</span>
+            <span class="cursive">Isha</span>
           </div>
         </q-toolbar-title>
+
+        <div class="">
+          <router-link v-for="(link, index) in Links" :key="index" :to="link.path" class="q-ml-md">
+            <q-icon :name="link.icon" class="q-pa-sm" />{{ link.name }}
+          </router-link>
+        </div>
       </q-toolbar>
     </q-header>
 
@@ -17,7 +23,7 @@
     </q-page-container>
 
     <!-- Minimal Footer -->
-    <q-footer class="bg-white text-grey-6 shadow-up-1">
+    <q-footer class="bg-white text-grey-6 border">
       <q-toolbar class="q-py-xs" style="min-height: 40px">
         <q-space />
         <div class="text-caption">© 2025 Isha Harmalkar. All rights reserved.</div>
@@ -30,18 +36,21 @@
 <script>
 export default {
   name: 'CustomLayout',
+
+  data() {
+    return {
+      Links: [
+        { name: 'Home', path: '/home', icon: 'home' },
+        { name: 'About', path: '/home', icon: 'face_2' },
+        { name: 'Contact', path: '/contact', icon: 'phone' },
+      ],
+    }
+  },
 }
 </script>
 
 <style scoped>
 /* Custom minimal styling */
-.q-header {
-  /* border-bottom: 1px solid #e0e0e0; */
-}
-
-.q-footer {
-  border-top: 1px solid #e0e0e0;
-}
 
 /* Smooth transitions */
 .q-tab {
