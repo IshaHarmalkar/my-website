@@ -4,7 +4,7 @@
 
     <div class="row q-col-gutter-md">
       <div v-for="(job, index) in experiences" :key="index" class="col-12 col-sm-6 col-md-4">
-        <q-card flat bordered class="q-pa-md">
+        <q-card flat bordered class="q-pa-md my-card">
           <div class="row items-center q-gutter-sm">
             <q-avatar size="56px" rounded v-if="job.logo">
               <img :src="job.logo" :alt="job.company" />
@@ -54,21 +54,20 @@ export default {
           duration: 'Jan 2025 – March 2025',
           logo: '/icons/cv-synk.svg',
           responsibilities: [
-            'Developed responsive web apps using Vue.js and Quasar',
-            'Optimized performance and improved load times by 30%',
-            'Collaborated with designers to implement modern UI',
+            'Developed full-stack hiring automation application using Laravel, Vue.js Composition API, Quasar, Pinia, and MySQL',
+            ' Built modules with RESTful APIs,  Eloquent  model relations for clean db interactions. ',
+            'Implemented secure authentication with role based authentication with Sanctum, file upload with storage facade',
           ],
         },
         {
           role: 'Software Developer Intern',
-
           company: 'AppBuddy LLP',
           duration: 'Jun 2024 – Aug 2024',
           logo: '/icons/app-buddy.png',
           responsibilities: [
-            'Built and maintained company landing pages',
-            'Assisted in migrating legacy code to modern frameworks',
-            'Worked on bug fixing and UI enhancements',
+            'Worked with Node js and vue js, MVC architecture. Mongodb for database',
+            'Developed a realtime weather app, refactored web pages for seo, web crawlers',
+            'Worked with google web master for resolving issues.',
           ],
         },
       ],
@@ -80,5 +79,10 @@ export default {
 <style scoped>
 ul {
   margin: 0;
+}
+
+.my-card {
+  min-height: 300px;
+  padding: 20px;
 }
 </style>

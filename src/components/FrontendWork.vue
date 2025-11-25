@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="text-h3 text-primary">🌻My Projects</div>
+    <div class="text-h3 text-primary">🌻Frontend Projects</div>
     <div class="row q-col-gutter-lg q-mt-md">
       <div v-for="(project, index) in projects" :key="index" class="col-12 col-sm-6 col-md-4">
         <q-card class="my-card" square>
@@ -48,43 +48,63 @@ export default {
     return {
       projects: [
         {
-          name: 'Curated',
+          name: 'DreamHouse Challenge',
           info: 'Favorite Project. Readwise equivalent for Pinterest, Notion',
           tech: 'Laravel, Vue, Cron jobs',
           learnt: 'Clean modular models, relations, seeders, scheduling',
           github: 'https://github.com/IshaHarmalkar/Digital_Garden',
-          img: '/projects/curated/newsletter.png',
-          link: 'no-link',
+          img: '/frontend-work/house.png',
+          link: 'https://dream-house-challenge.netlify.app/',
           exapanded: false,
         },
         {
-          name: 'Pokedex',
+          name: 'Curated Landing Page',
           info: 'Explore pokemon stats, compare, genreate random pokemons',
           tech: 'laravel, Vue, Pokeapi',
           learnt: 'Laravel, Vue, external api integrations, wait times',
           github: 'https://github.com/IshaHarmalkar/Pokedex',
-          img: '/projects/pokedex/Home.png',
-          link: 'https://pokedex-app.ishaharmalkar.com/#/',
+          img: '/frontend-work/curated.png',
+          link: 'https://curated-demo.netlify.app/#/',
           exapanded: false,
         },
         {
-          name: 'Realtime Weather',
+          name: 'Meme Treasure Box',
           info: 'What is the weather today, indeed?',
           tech: 'Bootstrap, html, css, js, React',
           learnt: 'Basic Web Development',
           github: 'https://github.com/IshaHarmalkar/weather-react',
-          img: '/projects/weather/weather_js.png',
-          link: 'https://weatherproject2024.netlify.app/',
+          img: '/frontend-work/meme_box.png',
+          link: 'https://meme-treausure-box-demo.netlify.app/#/',
           exapanded: false,
         },
         {
-          name: 'SARIMA Time Series Forecasting',
+          name: 'Bright Design',
           info: 'Predict demand for NCY taxi.',
           tech: 'Python, Flask, React, Leaflet',
           learnt: 'Data cleaning, feature selections, training, flask apis',
           github: 'https://github.com/IshaHarmalkar/Predict_final',
-          img: '/projects/sarima/sarima.jpg',
-          link: 'no-link',
+          img: '/frontend-work/bright_blog.png',
+          link: 'https://quasar-blog.netlify.app/#/',
+          exapanded: false,
+        },
+        {
+          name: 'First Portfolio Page',
+          info: 'Predict demand for NCY taxi.',
+          tech: 'Python, Flask, React, Leaflet',
+          learnt: 'Data cleaning, feature selections, training, flask apis',
+          github: 'https://github.com/IshaHarmalkar/Predict_final',
+          img: '/frontend-work/first_portfolio.png',
+          link: 'https://amz-portfolio.netlify.app/',
+          exapanded: false,
+        },
+        {
+          name: 'React Weather App',
+          info: 'Weather Projects are a genre',
+          tech: 'React, componets, component libraries',
+          learnt: 'Component separation, noob level animations',
+          github: 'https://github.com/IshaHarmalkar/Predict_final',
+          img: '/projects/weather/weather_react.png',
+          link: 'https://homework-week-5.netlify.app/',
           exapanded: false,
         },
       ],

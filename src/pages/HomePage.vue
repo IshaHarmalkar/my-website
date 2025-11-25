@@ -6,17 +6,39 @@
           <div class="text-h3">Hi! I am Isha</div>
           <div>
             <p>
-              Software engineer from India.<br />
-              I like to build cool stuff, learn as build and lalllalaa
+              Software engineer from Goa, India.<br />
+              I like to build cool stuff, work with cool people and learn cool things.
             </p>
+            <div class="text-grey">
+              p.s Cool is highly subjecctive. The world calls it being nerdy
+            </div>
+
             <!-- <div class="text-h6">Laravel | VueJs | Python</div> -->
 
-            <div class="text-h6">Always opent to banter.</div>
+            <div class="text-h6">Always open to banter.</div>
             <div class="contact-container flex justify-between q-mt-sm">
-              <q-btn outline color="red" label="Resume" />
-              <q-btn outline color="red" label="Linkedin" />
-              <q-btn outline color="red" label="Twitter" />
-              <q-btn outline color="red" label="Mail" />
+              <q-btn outline color="red" href="" target="_blank" label="Resume" />
+              <q-btn
+                outline
+                color="red"
+                href="https://www.linkedin.com/in/isha-harmalkar-0baa8a2b9/"
+                label="Linkedin"
+                target="_blank"
+              />
+              <q-btn
+                outline
+                color="red"
+                href="https://x.com/IshaHarmalkar"
+                label="Twitter"
+                target="_blank"
+              />
+              <q-btn
+                outline
+                color="red"
+                href="mailto:harmalkarisha@gmail.com"
+                label="Mail"
+                target="_blank"
+              />
             </div>
           </div>
         </div>
@@ -31,15 +53,17 @@
 
     <!-- Project Work -->
     <project-work class="space" />
+    <frontend-work class="space" />
   </q-page>
 </template>
 
 <script>
 import ProjectWork from 'src/components/ProjectWork.vue'
 import WorkExperience from 'src/components/WorkExperience.vue'
+import FrontendWork from 'src/components/FrontendWork.vue'
 
 export default {
-  components: { WorkExperience, ProjectWork },
+  components: { WorkExperience, ProjectWork, FrontendWork },
 }
 </script>
 
