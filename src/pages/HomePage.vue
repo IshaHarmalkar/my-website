@@ -17,7 +17,13 @@
 
             <div class="text-h6">Always open to banter.</div>
             <div class="contact-container flex justify-between q-mt-sm">
-              <q-btn outline color="red" href="" target="_blank" label="Resume" />
+              <q-btn
+                outline
+                color="red"
+                href="https://drive.google.com/file/d/1KVJv7FNgll8MPulgVu2N6TGqShh_8Gxq/view?usp=sharing"
+                target="_blank"
+                label="Resume"
+              />
               <q-btn
                 outline
                 color="red"
