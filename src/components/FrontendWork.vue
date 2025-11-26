@@ -3,7 +3,7 @@
     <div class="text-h3 text-primary">🌻Frontend Projects</div>
     <div class="row q-col-gutter-lg q-mt-md">
       <div v-for="(project, index) in projects" :key="index" class="col-12 col-sm-6 col-md-4">
-        <q-card class="my-card" square>
+        <q-card class="my-card card-bg" square>
           <img :src="project.img" fit="cover" style="height: 300px" />
 
           <q-card-section>
@@ -13,7 +13,7 @@
 
           <q-card-actions>
             <q-btn flat color="primary" label="Link" :href="project.link" target="_blank" />
-            <q-btn flat color="secondary" label="Github" />
+            <q-btn flat color="secondary" label="Github" :href="project.github" target="_blank" />
 
             <q-space />
 
@@ -99,7 +99,7 @@ export default {
         },
         {
           name: 'React Weather App',
-          info: 'Weather Projects have been an intregal part of my coding journey!',
+          info: 'Maybe I am too much into weather🐼',
           tech: 'React, components, component libraries',
           learnt:
             'Component separation, baby level animations and a really cool react concept I cannot recall the name of',

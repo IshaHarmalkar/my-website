@@ -3,7 +3,7 @@
     <div class="text-h3 text-primary">🌻My Projects</div>
     <div class="row q-col-gutter-lg q-mt-md">
       <div v-for="(project, index) in projects" :key="index" class="col-12 col-sm-6 col-md-4">
-        <q-card class="my-card" square>
+        <q-card class="my-card card-bg" square>
           <img :src="project.img" fit="cover" style="height: 300px" />
 
           <q-card-section>

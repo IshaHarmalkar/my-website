@@ -1,10 +1,10 @@
 <template>
   <q-section class="q-pa-md bg-grey-1">
-    <div class="text-h3 text-primary q-mb-lg">👩🏽‍💻 Internships</div>
+    <div class="text-h3 text-primary q-mb-lg">🌻 Internships</div>
 
     <div class="row q-col-gutter-md">
       <div v-for="(job, index) in experiences" :key="index" class="col-12 col-sm-6 col-md-4">
-        <q-card flat bordered class="q-pa-md my-card">
+        <q-card flat bordered class="q-pa-md my-card shadow-13 card-bg">
           <div class="row items-center q-gutter-sm">
             <q-avatar size="56px" rounded v-if="job.logo">
               <img :src="job.logo" :alt="job.company" />
@@ -18,7 +18,6 @@
           </div>
 
           <q-separator spaced />
-
           <ul class="q-pl-md">
             <li v-for="(point, i) in job.responsibilities" :key="i" class="text-body2">
               {{ point }}
