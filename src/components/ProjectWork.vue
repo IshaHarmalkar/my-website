@@ -20,7 +20,7 @@
               target="_blank"
               :disable="!project.link"
             />
-            <q-btn flat color="secondary" label="Github" />
+            <q-btn flat color="secondary" label="Github" :href="project.github" target="_blank" />
 
             <q-space />
 
