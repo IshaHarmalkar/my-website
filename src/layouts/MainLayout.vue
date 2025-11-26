@@ -9,10 +9,19 @@
           </div>
         </q-toolbar-title>
 
-        <div class="">
-          <router-link v-for="(link, index) in Links" :key="index" :to="link.path" class="q-ml-md">
-            <q-icon :name="link.icon" class="q-pa-sm" />{{ link.name }}
-          </router-link>
+        <div class="row items-center q-gutter-sm">
+          <q-btn
+            v-for="(link, index) in Links"
+            :key="index"
+            :label="link.name"
+            :icon="link.icon"
+            flat
+            rounded
+            dense
+            color=""
+            :dark-percentage="link.path"
+            class="q-ma-xs"
+          />
         </div>
       </q-toolbar>
     </q-header>
@@ -40,9 +49,10 @@ export default {
   data() {
     return {
       Links: [
-        { name: 'Home', path: '/home', icon: 'home' },
-        { name: 'About', path: '/home', icon: 'face_2' },
-        { name: 'Contact', path: '/contact', icon: 'phone' },
+        { name: 'Home', path: '/', icon: '' },
+        { name: 'Internships', path: '/#internships', icon: '' },
+        { name: 'Projects', path: '/#projects', icon: '' },
+        { name: 'Websites', path: '/#frontend', icon: 'sloth' },
       ],
     }
   },

@@ -55,11 +55,11 @@
     </div>
 
     <!-- Work Experience -->
-    <work-experience class="space" />
+    <work-experience class="space" id="internships" />
 
     <!-- Project Work -->
-    <project-work class="space" />
-    <frontend-work class="" />
+    <project-work class="space" id="projects" />
+    <frontend-work class="" id="frontend" />
   </q-page>
 </template>
 
@@ -83,9 +83,5 @@ export default {
 
 .space {
   margin: 160px 0;
-}
-
-body {
-  color: red;
 }
 </style>

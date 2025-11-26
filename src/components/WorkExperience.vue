@@ -1,6 +1,6 @@
 <template>
   <q-section class="q-pa-md bg-grey-1">
-    <div class="text-h3 text-primary q-mb-lg">🌻 Internships</div>
+    <div class="text-h3 text-primary q-mb-lg clean-text">🌻 Internships</div>
 
     <div class="row q-col-gutter-md">
       <div v-for="(job, index) in experiences" :key="index" class="col-12 col-sm-6 col-md-4">

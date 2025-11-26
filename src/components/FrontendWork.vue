@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="text-h3 text-primary">🌻Frontend Projects</div>
+    <div class="text-h3 text-primary clean-text">🌻Frontend Projects</div>
     <div class="row q-col-gutter-lg q-mt-md">
       <div v-for="(project, index) in projects" :key="index" class="col-12 col-sm-6 col-md-4">
         <q-card class="my-card card-bg" square>
