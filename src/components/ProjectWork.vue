@@ -12,7 +12,14 @@
           </q-card-section>
 
           <q-card-actions>
-            <q-btn flat color="primary" label="Link" :href="project.link" target="_blank" />
+            <q-btn
+              flat
+              color="primary"
+              label="Link"
+              :href="project.link"
+              target="_blank"
+              :disable="!project.link"
+            />
             <q-btn flat color="secondary" label="Github" />
 
             <q-space />
@@ -31,8 +38,10 @@
             <div v-show="project.expanded">
               <q-separator />
               <q-card-section class="text-subtitle2">
-                <div>{{ project.tech }}</div>
-                <div>{{ project.learnt }}</div>
+                <div>
+                  Tech: <span class="">{{ project.tech }}</span>
+                </div>
+                <div>Learnt: {{ project.learnt }}</div>
               </q-card-section>
             </div>
           </q-slide-transition>
@@ -54,12 +63,12 @@ export default {
           learnt: 'Clean modular models, relations, seeders, scheduling',
           github: 'https://github.com/IshaHarmalkar/Digital_Garden',
           img: '/projects/curated/newsletter.png',
-          link: 'no-link',
+          link: '',
           exapanded: false,
         },
         {
           name: 'Pokedex',
-          info: 'Explore pokemon stats, compare, genreate random pokemons',
+          info: 'Explore pokemon stats, compare, genrate random pokemons',
           tech: 'laravel, Vue, Pokeapi',
           learnt: 'Laravel, Vue, external api integrations, wait times',
           github: 'https://github.com/IshaHarmalkar/Pokedex',
@@ -84,7 +93,7 @@ export default {
           learnt: 'Data cleaning, feature selections, training, flask apis',
           github: 'https://github.com/IshaHarmalkar/Predict_final',
           img: '/projects/sarima/sarima.jpg',
-          link: 'no-link',
+          link: '',
           exapanded: false,
         },
       ],

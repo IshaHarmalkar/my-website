@@ -5,12 +5,12 @@
         <div class="col">
           <div class="text-h3">Hi! I am Isha</div>
           <div>
-            <p>
-              Software engineer from Goa, India.<br />
+            <div>
+              Backend Software engineer from Goa, India.<br />
               I like to build cool stuff, work with cool people and learn cool things.
-            </p>
+            </div>
             <div class="text-grey">
-              p.s Cool is highly subjecctive. The world calls it being nerdy
+              p.s Cool is highly subjective. Mainly I just want to be good
             </div>
 
             <!-- <div class="text-h6">Laravel | VueJs | Python</div> -->

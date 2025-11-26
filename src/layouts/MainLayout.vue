@@ -18,7 +18,7 @@
     </q-header>
 
     <!-- Main Content Area -->
-    <q-page-container class="bg-grey-1">
+    <q-page-container class="bg-grey-1 q-pa-xl">
       <router-view />
     </q-page-container>
 

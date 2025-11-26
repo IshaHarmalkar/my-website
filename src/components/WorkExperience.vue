@@ -43,9 +43,9 @@ export default {
           duration: 'Sep 2025 – Nov 2025',
           logo: '/icons/spintly.png',
           responsibilities: [
-            'Designing and building microservices with goland Kakfa on the Integrations team',
+            'Designing and building microservices with golang and Apache Kakfa on the Integrations team',
             'Golang REST apis, kafka producer consumers, Postgress, mermaid flow diagrams',
-            'Owned the process from system ddesign to writing code to production.',
+            'Owned the process from system design to writing code to production.',
           ],
         },
         {
