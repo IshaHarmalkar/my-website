@@ -58,8 +58,8 @@ export default {
       projects: [
         {
           name: 'Curated',
-          info: 'Favorite Project. Readwise equivalent for Pinterest, Notion',
-          tech: 'Laravel, Vue, Cron jobs',
+          info: 'Favorite Project. Readwise equivalent for Pinterest, Notion. ',
+          tech: 'Laravel, Vue, Cron jobs. MySql',
           learnt: 'Clean modular models, relations, seeders, scheduling',
           github: 'https://github.com/IshaHarmalkar/Digital_Garden',
           img: '/projects/curated/newsletter.png',
@@ -77,7 +77,7 @@ export default {
           exapanded: false,
         },
         {
-          name: 'Realtime Weather',
+          name: 'Weather App',
           info: 'What is the weather today, indeed?',
           tech: 'Bootstrap, html, css, js, React',
           learnt: 'Basic Web Development',

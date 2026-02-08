@@ -42,9 +42,9 @@ export default {
           duration: 'Sep 2025 – Nov 2025',
           logo: '/icons/spintly.png',
           responsibilities: [
-            'Designing and building microservices with golang and Apache Kakfa on the Integrations team',
-            'Golang REST apis, kafka producer consumers, Postgress, mermaid flow diagrams',
-            'Owned the process from system design to writing code to production.',
+            'Contributed to building Golang backend microservices with Apache Kafka by extending services to support white labeled third party integrations, following core software engineering principles.',
+            'Developed REST Apis, Kafka producers and consumers and worked with PostgreSQL to implement retry logic and failure logging improving reliability during third party server downtime.',
+            'Participated in system design discussions, wrote clean, scalable code, documented workflows using Swagger and flow diagrams, and debugged issues with senior engineers.',
           ],
         },
         {
@@ -54,7 +54,7 @@ export default {
           logo: '/icons/cv-synk.svg',
           responsibilities: [
             'Developed full-stack hiring automation application using Laravel, Vue.js Composition API, Quasar, Pinia, and MySQL',
-            ' Built modules with RESTful APIs,  Eloquent  model relations for clean db interactions. ',
+            'Built modules with RESTful APIs,  Eloquent  model relations for clean db interactions. ',
             'Implemented secure authentication with role based authentication with Sanctum, file upload with storage facade',
           ],
         },

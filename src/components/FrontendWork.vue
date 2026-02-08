@@ -49,7 +49,7 @@ export default {
       projects: [
         {
           name: 'DreamHouse Challenge',
-          info: 'Was madde for a SheCodes challenge, I like it a lot',
+          info: 'Was made for a SheCodes challenge, I like it a lot',
           tech: 'Bootstrap, html, css',
           learnt: 'Brushed up on my frontend skills.',
           github: 'https://github.com/IshaHarmalkar/sheCodes-challenge-house',

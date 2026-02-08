@@ -20,7 +20,7 @@
               <q-btn
                 outline
                 color="red-13"
-                href="https://drive.google.com/file/d/1KVJv7FNgll8MPulgVu2N6TGqShh_8Gxq/view?usp=sharing"
+                href="https://drive.google.com/file/d/1AJ99Wjgb_c5vAkPAZKL806s4Kvk10cIG/view?usp=sharing"
                 target="_blank"
                 label="Resume"
               />
@@ -36,6 +36,13 @@
                 color="red"
                 href="https://x.com/IshaHarmalkar"
                 label="Twitter"
+                target="_blank"
+              />
+              <q-btn
+                outline
+                color="red"
+                href="https://leetcode.com/u/blueRibbons"
+                label="LeetCode"
                 target="_blank"
               />
               <q-btn
