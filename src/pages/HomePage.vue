@@ -16,42 +16,56 @@
             <!-- <div class="text-h6">Laravel | VueJs | Python</div> -->
 
             <div class="text-h6">Always open to banter.</div>
-            <div class="contact-container flex justify-between q-mt-sm">
-              <q-btn
-                outline
-                color="red-13"
-                href="https://drive.google.com/file/d/1AJ99Wjgb_c5vAkPAZKL806s4Kvk10cIG/view?usp=sharing"
-                target="_blank"
-                label="Resume"
-              />
-              <q-btn
-                outline
-                color="red-13"
-                href="https://www.linkedin.com/in/isha-harmalkar-0baa8a2b9/"
-                label="Linkedin"
-                target="_blank"
-              />
-              <q-btn
-                outline
-                color="red"
-                href="https://x.com/IshaHarmalkar"
-                label="Twitter"
-                target="_blank"
-              />
-              <q-btn
-                outline
-                color="red"
-                href="https://leetcode.com/u/blueRibbons"
-                label="LeetCode"
-                target="_blank"
-              />
-              <q-btn
-                outline
-                color="red"
-                href="mailto:harmalkarisha@gmail.com"
-                label="Mail"
-                target="_blank"
-              />
+            <div class="contact-container row q-col-gutter-sm q-mt-sm">
+              <div class="col-12 col-sm-auto">
+                <q-btn
+                  outline
+                  color="red-13"
+                  href="https://drive.google.com/file/d/1AJ99Wjgb_c5vAkPAZKL806s4Kvk10cIG/view?usp=sharing"
+                  target="_blank"
+                  label="Resume"
+                />
+              </div>
+
+              <div class="col-12 col-sm-auto">
+                <q-btn
+                  outline
+                  color="red-13"
+                  href="https://www.linkedin.com/in/isha-harmalkar-0baa8a2b9/"
+                  label="Linkedin"
+                  target="_blank"
+                />
+              </div>
+
+              <div class="col-12 col-sm-auto">
+                <q-btn
+                  outline
+                  color="red"
+                  href="https://x.com/IshaHarmalkar"
+                  label="Twitter"
+                  target="_blank"
+                />
+              </div>
+
+              <div class="col-12 col-sm-auto">
+                <q-btn
+                  outline
+                  color="red"
+                  href="https://leetcode.com/u/blueRibbons"
+                  label="LeetCode"
+                  target="_blank"
+                />
+              </div>
+
+              <div class="col-12 col-sm-auto">
+                <q-btn
+                  outline
+                  color="red"
+                  href="mailto:harmalkarisha@gmail.com"
+                  label="Mail"
+                  target="_blank"
+                />
+              </div>
             </div>
           </div>
         </div>

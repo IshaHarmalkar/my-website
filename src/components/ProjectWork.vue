@@ -3,7 +3,7 @@
     <div class="text-h3 text-primary clean-text">🌻Projects</div>
     <div class="row q-col-gutter-lg q-mt-md">
       <div v-for="(project, index) in projects" :key="index" class="col-12 col-sm-6 col-md-4">
-        <q-card class="my-card card-bg" square>
+        <q-card class="my-card card-bg card-hover" square>
           <img :src="project.img" fit="cover" style="height: 300px" />
 
           <q-card-section>
@@ -38,10 +38,19 @@
             <div v-show="project.expanded">
               <q-separator />
               <q-card-section class="text-subtitle2">
-                <div>
-                  Tech: <span class="">{{ project.tech }}</span>
-                </div>
                 <div>Learnt: {{ project.learnt }}</div>
+                <div class="row q-gutter-xs">
+                  <q-chip
+                    square
+                    color="red-13"
+                    v-for="(skill, i) in project.tech"
+                    :key="i"
+                    dense
+                    outline
+                  >
+                    {{ skill }}
+                  </q-chip>
+                </div>
               </q-card-section>
             </div>
           </q-slide-transition>
@@ -59,7 +68,7 @@ export default {
         {
           name: 'Curated',
           info: 'Favorite Project. Readwise equivalent for Pinterest, Notion. ',
-          tech: 'Laravel, Vue, Cron jobs. MySql',
+          tech: ['Laravel', 'Vue', 'Cron jobs', 'MySql'],
           learnt: 'Clean modular models, relations, seeders, scheduling',
           github: 'https://github.com/IshaHarmalkar/Digital_Garden',
           img: '/projects/curated/newsletter.png',
@@ -69,7 +78,7 @@ export default {
         {
           name: 'Pokedex',
           info: 'Explore pokemon stats, compare, genrate random pokemons',
-          tech: 'laravel, Vue, Pokeapi',
+          tech: ['Laravel', 'Vue', 'Cron jobs', 'MySql'],
           learnt: 'Laravel, Vue, external api integrations, wait times',
           github: 'https://github.com/IshaHarmalkar/Pokedex',
           img: '/projects/pokedex/Home.png',
@@ -79,7 +88,7 @@ export default {
         {
           name: 'Weather App',
           info: 'What is the weather today, indeed?',
-          tech: 'Bootstrap, html, css, js, React',
+          tech: ['Bootstrap', 'html', 'css', 'js', 'React'],
           learnt: 'Basic Web Development',
           github: 'https://github.com/IshaHarmalkar/weather-react',
           img: '/projects/weather/weather_js.png',
@@ -89,7 +98,7 @@ export default {
         {
           name: 'SARIMA Time Series Forecasting',
           info: 'Predict demand for NCY taxi.',
-          tech: 'Python, Flask, React, Leaflet',
+          tech: ['Python', 'Flask', 'React', 'Leaflet'],
           learnt: 'Data cleaning, feature selections, training, flask apis',
           github: 'https://github.com/IshaHarmalkar/Predict_final',
           img: '/projects/sarima/sarima.jpg',
@@ -108,4 +117,16 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card-hover {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+</style>

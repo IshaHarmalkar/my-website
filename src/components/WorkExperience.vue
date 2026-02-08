@@ -4,7 +4,7 @@
 
     <div class="row q-col-gutter-md">
       <div v-for="(job, index) in experiences" :key="index" class="col-12 col-sm-6 col-md-4">
-        <q-card flat bordered class="q-pa-md my-card shadow-13 card-bg">
+        <q-card flat bordered class="q-pa-md my-card shadow-13 card-bg card-hover">
           <div class="row items-center q-gutter-sm">
             <q-avatar size="56px" rounded v-if="job.logo">
               <img :src="job.logo" :alt="job.company" />
@@ -18,11 +18,24 @@
           </div>
 
           <q-separator spaced />
+
+          <!-- skills -->
+          <q-tabs> </q-tabs>
+
           <ul class="q-pl-md">
             <li v-for="(point, i) in job.responsibilities" :key="i" class="text-body2">
               {{ point }}
             </li>
           </ul>
+
+          <!-- Skills -->
+          <q-separator spaced />
+
+          <div class="row q-gutter-xs">
+            <q-chip square color="red-13" v-for="(skill, i) in job.skills" :key="i" dense outline>
+              {{ skill }}
+            </q-chip>
+          </div>
         </q-card>
       </div>
     </div>
@@ -38,13 +51,21 @@ export default {
         {
           role: 'Software Developer Intern',
 
-          company: 'Splintly',
+          company: 'Spintly',
           duration: 'Sep 2025 – Nov 2025',
           logo: '/icons/spintly.png',
           responsibilities: [
             'Contributed to building Golang backend microservices with Apache Kafka by extending services to support white labeled third party integrations, following core software engineering principles.',
             'Developed REST Apis, Kafka producers and consumers and worked with PostgreSQL to implement retry logic and failure logging improving reliability during third party server downtime.',
             'Participated in system design discussions, wrote clean, scalable code, documented workflows using Swagger and flow diagrams, and debugged issues with senior engineers.',
+          ],
+          skills: [
+            'Golang',
+            'Kafka Apache',
+            'Microservices and Event Driven Architecture',
+            'Rest Apis',
+            'Flow Diagrams',
+            'Swagger for Api Documentation',
           ],
         },
         {
@@ -57,6 +78,7 @@ export default {
             'Built modules with RESTful APIs,  Eloquent  model relations for clean db interactions. ',
             'Implemented secure authentication with role based authentication with Sanctum, file upload with storage facade',
           ],
+          skills: ['Laravel', 'Quasar', 'MySql', 'Rest Apis'],
         },
         {
           role: 'Software Developer Intern',
@@ -68,6 +90,7 @@ export default {
             'Developed a realtime weather app, refactored web pages for seo, web crawlers',
             'Worked with google web master for resolving issues.',
           ],
+          skills: ['Vue.js', 'Node.js', 'MongoDb', 'Rest Apis', 'SEO Optimizations and Bug Fixes'],
         },
       ],
     }
@@ -83,5 +106,17 @@ ul {
 .my-card {
   min-height: 300px;
   padding: 20px;
+}
+
+.card-hover {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
 }
 </style>

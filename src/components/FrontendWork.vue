@@ -3,7 +3,7 @@
     <div class="text-h3 text-primary clean-text">🌻Frontend Projects</div>
     <div class="row q-col-gutter-lg q-mt-md">
       <div v-for="(project, index) in projects" :key="index" class="col-12 col-sm-6 col-md-4">
-        <q-card class="my-card card-bg" square>
+        <q-card class="my-card card-bg card-hover" square>
           <img :src="project.img" fit="cover" style="height: 300px" />
 
           <q-card-section>
@@ -120,4 +120,16 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card-hover {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+</style>
